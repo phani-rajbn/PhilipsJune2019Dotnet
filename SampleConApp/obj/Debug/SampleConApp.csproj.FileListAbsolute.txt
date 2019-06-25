@@ -1,0 +1,7 @@
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\bin\Debug\SampleConApp.exe.config
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\bin\Debug\SampleConApp.exe
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\bin\Debug\SampleConApp.pdb
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\obj\Debug\SampleConApp.csproj.CoreCompileInputs.cache
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\obj\Debug\SampleConApp.exe
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\obj\Debug\SampleConApp.pdb
+B:\Programs\Philips-June-2019\DotnetApps\SampleConApp\obj\Debug\SampleConApp.csprojAssemblyReference.cache
