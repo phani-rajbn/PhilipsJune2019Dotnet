@@ -145,9 +145,11 @@ namespace UILayer
 {
     using DataLayer;
     using CommonLayer;
+    using SampleConApp;
+
     class UserInterface
     {
-        static IDataLayer component = new ArrayComponent();
+        static IDataLayer component = new CSVComponent();
         static string getMenu(string fileName)
         {
             StreamReader reader = new StreamReader(fileName);
