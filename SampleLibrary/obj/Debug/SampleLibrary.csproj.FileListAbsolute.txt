@@ -1,0 +1,6 @@
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\bin\Debug\SampleLibrary.dll
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\bin\Debug\SampleLibrary.pdb
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\obj\Debug\SampleLibrary.csprojAssemblyReference.cache
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\obj\Debug\SampleLibrary.csproj.CoreCompileInputs.cache
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\obj\Debug\SampleLibrary.dll
+B:\Programs\Philips-June-2019\DotnetApps\SampleLibrary\obj\Debug\SampleLibrary.pdb
