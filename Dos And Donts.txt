@@ -1,0 +1,36 @@
+Coding Practices of C#:
+1. Naming conventions: Pascal Casing and Camel Casing:
+a. Class declarations should be Pascal casing
+Private members should be Camel Casing
+Public members will be Pascal casing. 
+
+b. No Single character name for anything in  C# 
+
+c. Method names should be clear and not ambiguous.
+
+d. Methods should be modular in nature: Single responsibility principle.  
+
+e: Choose when to use properties and methods. Properties are data carriers and methods are data manipulators.
+
+-------------Value types and Reference types----------------------------------------------------
+Value types store the value in their variables. Reference types store the memory of the value in their variables. Reference are directly or indirectly use new operator to allocate memory for the variable. Un- allocated memory will make the variable unusable, there by throwing NullReferenceException.  
+
+All Value Types are structs in C#. All Reference types are Classes in C#: object and string
+All primitive types are Value types. 
+
+Collections: First Preference : Array, Generics, Collections. 
+//Arrays are highly optimized: Fixed in Size and memory is allocated in a contiguous location so iteration and retrieval will be fast. 
+//List when added or removed, it creates new memory performance wise its slightly slower. ArrayList is the least performance data structure as it needs to unbox while reading the data. 
+Dictionary, HashSet and finally List. 
+
+
+SOLID Principles while coding:
+UR functions should return Abstract Types instead of ConcreteTypes. 
+Try to avoid BOXING and UNBOXING as much as possible. 
+When any return type is object, note that it must be unboxed. Use Convert class for unboxing value types and use is and as operator for Unboxing reference types.
+When equating value types, better use the Equals method instead of ==
+
+Go thro this article:
+https://gooroo.io/GoorooTHINK/Article/17142/Tips-for-writing-clean-and-best-code-in-C/26389#.XRXYsY_hU2w
+
+
