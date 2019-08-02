@@ -1,0 +1,46 @@
+﻿<Window x:Class="SampleWpfApp.GridPanelExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="GridPanelExample" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="2">
+            <Label FontSize="30pt">List of Employees</Label>
+            <ListBox Name="lstNames" SelectionChanged="OnSelect"/>
+        </StackPanel>
+        <Grid Grid.Column="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label FontSize="30" Grid.ColumnSpan="2" HorizontalAlignment="Center">Details of the Employee</Label>
+            <Label Grid.Column="0" Grid.Row="1">Employee Name:</Label>
+            <Label Grid.Column="0" Grid.Row="2">Employee Email:</Label>
+            <Label Grid.Column="0" Grid.Row="3">Employee Salary:</Label>
+            <Label Grid.Column="0" Grid.Row="4">Employee Phone:</Label>
+            <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="250px" Name="txtName"/>
+            <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2" Width="250px" Name="txtEmail"/>
+            <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="3" Width="250px" Name="txtSalary"/>
+            <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" Width="250px" Name="txtPhone"/>
+            <WrapPanel Margin="2" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Button Click="OnSaveChanges">Save Changes</Button>
+                <Button>Cancel</Button>
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="SampleWpfApp.WrapPanelExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="WrapPanelExample" Height="450" Width="800">
+    <StackPanel Margin="2" HorizontalAlignment="Center">
+        <Label FontSize="30pt">Employee Details</Label>
+        <WrapPanel Margin="2">
+            <Label>Enter the Name:</Label>
+            <TextBox Name="txtName" Width="300px"/>
+        </WrapPanel>
+        <WrapPanel Margin="2">
+            <Label>Enter the Email Address:</Label>
+            <TextBox Name="txtEmail" Width="300px"/>
+        </WrapPanel>
+        <WrapPanel Margin="2">
+            <Label>Enter the Phone:</Label>
+            <TextBox Name="txtPhone" Width="300px"/>
+        </WrapPanel>
+        <WrapPanel Margin="2">
+            <Label>Enter the Salary:</Label>
+            <TextBox Name="txtSalary" Width="300px"/>
+        </WrapPanel>
+        <WrapPanel Margin="2" HorizontalAlignment="Center">
+            <Button Margin="5" Click="onSubmit">Submit</Button>
+            <Button Margin="5" Click="onCancel">Cancel</Button>
+        </WrapPanel>
+    </StackPanel>
+</Window>
