@@ -1,0 +1,31 @@
+﻿<Window x:Class="SampleWpfApp.EventHandling"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="EventHandling" MouseUp="OnMouseUp" Height="450" Width="800">
+    <Grid Margin="2" MouseUp="OnMouseUp" PreviewMouseUp="beforeMouseUp">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Margin="2" HorizontalAlignment="Left" Background="AliceBlue" BorderBrush="Blue" BorderThickness="1" MouseUp="OnMouseUp">
+            <StackPanel Margin='2' MouseUp="OnMouseUp">
+                <TextBlock Margin="2" MouseUp="OnMouseUp">Some content here</TextBlock>
+                <Image Source="Images\HappyFace.jpg" Width="200" Height="50" MouseUp="OnMouseUp"/>
+                <TextBlock Margin="2" MouseUp="OnMouseUp">Some Footer content here</TextBlock>
+            </StackPanel>
+        </Label>
+        <ListBox Grid.Row="1" Grid.ColumnSpan="2" Name="lstMessages"/>
+        <CheckBox Grid.Row="2" Grid.ColumnSpan="2" Name="ckHandled">Handle at First  Only</CheckBox>
+        <Button Grid.Row="3" HorizontalAlignment="Right" Name="cmdClear" Grid.Column="1" Click="OnClick">Clear List</Button>
+    </Grid>
+</Window>

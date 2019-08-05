@@ -1,0 +1,22 @@
+﻿<Window x:Class="SampleWpfApp.Binding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="Binding" Height="450" Width="800">
+    <StackPanel Margin="2">
+        <Label>Enter some Text here</Label>
+        <TextBox Name="txtText"/>
+        <Slider Margin="2" Name="fontSizer" Minimum="10" Maximum="50" TickFrequency="5" TickPlacement="Both" Ticks="20" Value="20"/>
+        <ListBox Name="lstColor">
+            <ListBoxItem>Red</ListBoxItem>
+            <ListBoxItem>Green</ListBoxItem>
+            <ListBoxItem>Blue</ListBoxItem>
+            <ListBoxItem>Yellow</ListBoxItem>
+            <ListBoxItem>Orange</ListBoxItem>
+        </ListBox>
+        <TextBlock Foreground="{Binding ElementName=lstColor, Path=SelectedItem.Content}" FontSize="{Binding ElementName=fontSizer, Path=Value}" Text="{Binding ElementName=txtText, Path=Text}"/>
+    </StackPanel>
+</Window>

@@ -13,6 +13,7 @@ namespace SampleWpfApp.Models
         public string EmpAddress { get; set; }
         public long EmpContact { get; set; }
         public int EmpSalary { get; set; }
+       
     }
 
     public class EmpRepository
@@ -103,5 +104,7 @@ namespace SampleWpfApp.Models
             //Update the details
             //Exit the func....
         }
+        //Create a property called AllEmployees...
+        public List<Employee> AllEmployees => _employees;
     }
 }

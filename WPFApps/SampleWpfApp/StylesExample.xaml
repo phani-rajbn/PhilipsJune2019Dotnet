@@ -1,0 +1,31 @@
+﻿<Window x:Class="SampleWpfApp.StylesExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="StylesExample" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="largeButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="Blue"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Button Style="{StaticResource largeButtonStyle}">Styled Button</Button>
+        <Button>Styled Button</Button>
+        <Button Content="Styled Inside">
+            <Button.Style>
+                <Style>
+                    <Setter Property="Button.FontSize" Value="40"/>
+                    <Setter Property="Button.Foreground" Value="Green"/>
+                    <Setter Property="Button.Background" Value="LightGreen"/>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button>Styled Button</Button>
+    </StackPanel>
+</Window>

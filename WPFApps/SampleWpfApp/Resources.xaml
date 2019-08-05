@@ -1,0 +1,26 @@
+﻿<Window x:Class="SampleWpfApp.Resources"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleWpfApp"
+        mc:Ignorable="d"
+        Title="Resources" Height="450" Width="800" Background="{DynamicResource single}">
+    <Window.Resources>
+        <ImageBrush x:Key="tiledImage" ImageSource="Images\HappyFace.jpg" TileMode="Tile" Viewport="0,0,30,30" ViewportUnits="Absolute"/>
+        <ImageBrush x:Key="single" ImageSource="Images\SadFace.jpg"/>
+    </Window.Resources>
+    <StackPanel Margin="2">
+        <Button Margin="5" Height="75" Background="{StaticResource tiledImage}">Titled Button</Button>
+        <Button Margin="5" Height="75" Background="{StaticResource single}" Content="Single Image Button">
+            <Button.ToolTip>
+                <StackPanel HorizontalAlignment="Center">
+                    <Image Source="Images\HappyFace.jpg" Width="100"  Height="30"/>
+                    <TextBlock Text="Click Me" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
+        <Button>Default Style</Button>
+        <Button Style="{x:Null}">No Default Style</Button>
+    </StackPanel>
+</Window>
