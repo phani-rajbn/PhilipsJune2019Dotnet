@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <ProductID>111</ProductID>
+    <ProductName>Kashmir Apples</ProductName>
+    <Price>250</Price>
+    <Image>Images/Apple.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>112</ProductID>
+    <ProductName>Juicy Bananas</ProductName>
+    <Price>25</Price>
+    <Image>Images/Banana.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>113</ProductID>
+    <ProductName>Blue Bangalore Grapes</ProductName>
+    <Price>50</Price>
+    <Image>Images/BlueGrapes.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>114</ProductID>
+    <ProductName>Cherry Fruits</ProductName>
+    <Price>150</Price>
+    <Image>Images/CherryFruit.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>115</ProductID>
+    <ProductName>Kashmir Apples</ProductName>
+    <Price>250</Price>
+    <Image>Images/Apple.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>116</ProductID>
+    <ProductName>Tasty Chikku</ProductName>
+    <Price>60</Price>
+    <Image>Images/Chikku.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>117</ProductID>
+    <ProductName>Custurd Apples</ProductName>
+    <Price>90</Price>
+    <Image>Images/CusturdApple.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>118</ProductID>
+    <ProductName>Pineapples</ProductName>
+    <Price>55</Price>
+    <Image>Images/Pineapple.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>119</ProductID>
+    <ProductName>Green White Guavas</ProductName>
+    <Price>50</Price>
+    <Image>Images/Gauva.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+  <Product>
+    <ProductID>120</ProductID>
+    <ProductName>Nagpur Oranges</ProductName>
+    <Price>40</Price>
+    <Image>Images/Orange.jpg</Image>
+    <Quantity>1</Quantity>
+  </Product>
+</ArrayOfProduct>

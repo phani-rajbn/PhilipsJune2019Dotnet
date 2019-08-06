@@ -14,14 +14,24 @@
                 <Setter Property="Control.MinWidth" Value="200"/>
             </Style.Setters>
             <Style.Triggers>
-                <Trigger Property="Control.IsMouseOver" Value="True">
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="Control.IsFocused" Value="True"/>
+                        <Condition Property="Control.IsMouseOver" Value="True"/>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="Control.Background" Value="Yellow"/>
+                        <Setter Property="Control.FontSize" Value="28"/>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+                <!--<Trigger Property="Control.IsMouseOver" Value="True">
                     <Setter Property="Control.Background" Value="Red"/>
                     <Setter Property="Control.FontSize" Value="28"/>
                 </Trigger>
                 <Trigger Property="Control.IsFocused" Value="True">
                     <Setter Property="Control.Background" Value="Red"/>
                     <Setter Property="Control.FontSize" Value="28"/>
-                </Trigger>
+                </Trigger>-->
             </Style.Triggers>
         </Style>
     </Window.Resources>
