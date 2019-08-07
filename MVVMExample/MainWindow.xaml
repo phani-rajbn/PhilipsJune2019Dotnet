@@ -1,0 +1,24 @@
+﻿<Window x:Class="MVVMExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMExample"
+        xmlns:vm="clr-namespace:MVVMExample.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Resources>
+            <vm:SampleViewModel x:Key="example" Welcome="Simple Text Message"/>
+        </Grid.Resources>
+        <StackPanel Margin="2">
+            <Label FontSize="30">MVVM Example</Label>
+            <TextBlock Name="txtContent" Text="{Binding Source={StaticResource example}, Path=Welcome}"/>
+            <StackPanel Margin="2">
+                <Label>Change the Content:</Label>
+                <TextBox Name="txtChange" Width="200"/>
+                <Button Command="{Binding Source={StaticResource example}, Path=SaveChanges}" CommandParameter="{Binding ElementName=txtChange, Path=Text}">Save Changes</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
