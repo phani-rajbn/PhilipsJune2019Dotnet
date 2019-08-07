@@ -9,6 +9,15 @@
         Title="TabbedControl" Height="450" Width="800">
     <Window.Resources>
         <models:EmployeeRepository x:Key="data"/>
+        <DataTemplate x:Key="ImageTemplate">
+            <Image Source="{Binding Path=EmpImage}" Width="50" Height="50"/>
+        </DataTemplate>
+        <DataTemplate x:Key="AddressTemplate">
+            <StackPanel Margin="2">
+                <Label Content="{Binding Path=EmpAddress1}"/>
+                <Label Content="{Binding Path=EmpAddress2}"/>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -46,6 +55,32 @@
                         </StackPanel>
                     </Border>
                 </TabItem.Header>
+                <Grid Margin="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label HorizontalAlignment="Center">List of Employees</Label>
+                    <ListView Name="lstView" ItemsSource="{Binding Source={StaticResource data}, Path=AllEmployees}">
+                        <ListView.View>
+                            <GridView AllowsColumnReorder="True">
+                                <GridViewColumn Header="EmpImage">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding Path=EmpImage}" Width="50" Height="50"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn> 
+                                <GridViewColumn Header="EmpAddress" CellTemplate="{StaticResource AddressTemplate}"/>
+                                <GridViewColumn Header="EmpID" DisplayMemberBinding="{Binding Path=EmpID}"/>
+                                <GridViewColumn Header="EmpID" DisplayMemberBinding="{Binding Path=EmpID}"/>
+                                <GridViewColumn Header="EmpID" DisplayMemberBinding="{Binding Path=EmpID}"/>
+                                <GridViewColumn Header="EmpID" DisplayMemberBinding="{Binding Path=EmpID}"/>
+                                <GridViewColumn Header="EmpID" DisplayMemberBinding="{Binding Path=EmpID}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
             </TabItem>
             <TabItem>
                 <TabItem.Header>
