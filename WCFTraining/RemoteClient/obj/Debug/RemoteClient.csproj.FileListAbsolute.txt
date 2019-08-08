@@ -1,0 +1,10 @@
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\bin\Debug\RemoteClient.exe.config
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\bin\Debug\RemoteClient.exe
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\bin\Debug\RemoteClient.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\bin\Debug\RemoteLib.dll
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\bin\Debug\RemoteLib.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\obj\Debug\RemoteClient.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\obj\Debug\RemoteClient.csproj.CopyComplete
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\obj\Debug\RemoteClient.exe
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\obj\Debug\RemoteClient.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteClient\obj\Debug\RemoteClient.csprojAssemblyReference.cache

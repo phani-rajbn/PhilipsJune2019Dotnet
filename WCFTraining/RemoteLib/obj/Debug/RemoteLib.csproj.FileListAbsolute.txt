@@ -1,0 +1,5 @@
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteLib\bin\Debug\RemoteLib.dll
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteLib\bin\Debug\RemoteLib.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteLib\obj\Debug\RemoteLib.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteLib\obj\Debug\RemoteLib.dll
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\RemoteLib\obj\Debug\RemoteLib.pdb

@@ -1,0 +1,7 @@
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\bin\Debug\WebServiceClient.exe.config
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\bin\Debug\WebServiceClient.exe
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\bin\Debug\WebServiceClient.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\obj\Debug\WebServiceClient.csprojAssemblyReference.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\obj\Debug\WebServiceClient.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\obj\Debug\WebServiceClient.exe
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\WebServiceClient\obj\Debug\WebServiceClient.pdb
