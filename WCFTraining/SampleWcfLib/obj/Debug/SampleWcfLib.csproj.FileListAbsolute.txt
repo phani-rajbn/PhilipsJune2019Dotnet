@@ -1,0 +1,7 @@
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\bin\Debug\SampleWcfLib.dll.config
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\bin\Debug\SampleWcfLib.dll
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\bin\Debug\SampleWcfLib.pdb
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\obj\Debug\SampleWcfLib.csprojAssemblyReference.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\obj\Debug\SampleWcfLib.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\obj\Debug\SampleWcfLib.dll
+C:\Users\phani\source\repos\PhilipsWcfTraining\WCFApps\SampleWcfLib\obj\Debug\SampleWcfLib.pdb
