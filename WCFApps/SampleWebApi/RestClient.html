@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Rest Client for Web API</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+            color: blueviolet;
+            background-color: burlywood
+        }
+        table{
+            width:90%;
+            border:double
+        }
+    </style>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        var url = "api/Employee";
+        function fillRecords() {
+            $("table").find("tr:gt(1)").remove();
+            $.get(url, function (data) {
+                $.each(data, function (index, value) {
+                    var row = '<tr><td>' + value.ID + '</td><td>';
+                    row += value.Name + '</td><td>'
+                    row += value.Address + '</td>'
+                    row += '<td> <a href="#" class="edit" empId="' + value.ID + '">Edit</a></td></tr>';
+                    $("table").append(row);
+                })
+                $(".edit").click(function () {
+                    var empId = $(this).attr("empId");
+                    var tempUrl = url + "/" + empId;
+                    $.get(tempUrl, function (data) {
+                        $("#txtID").val(data.ID);
+                        $("#txtName").val(data.Name);
+                        $("#txtAddr").val(data.Address);
+                        $("#txtSal").val(data.Salary);
+                        $("#btnSave").click(function () {
+                            var emp = {};
+                            emp.ID = $("#txtID").val();
+                            emp.Name = $("#txtName").val();
+                            emp.Address = $("#txtAddr").val();
+                            emp.Salary = $("#txtSal").val();
+                            $.ajax({
+                                data: emp,
+                                url: url,
+                                method: 'PUT',
+                                success: function (data) {
+                                    alert(data);
+                                }
+                            });
+                        })
+                    })
+                    $("div:gt(0)").hide(2000);
+                    $("div:eq(2)").show(2000);
+                })
+            })
+            $("div:eq(1)").show(2000);
+        }
+        function populateData() {
+            $("a:eq(0)").click(fillRecords)
+            
+        }
+        function addingCode() {
+            $("div:gt(0)").hide(2000);
+            $("div:eq(3)").show(2000);
+            $("#btnAdd").click(function () {
+                var emp = {};
+                emp.ID = $("#txtNewID").val();
+                emp.Name = $("#txtNewName").val();
+                emp.Address = $("#txtNewAddr").val();
+                emp.Salary = $("#txtNewSal").val();
+                $.post(url, emp, (data) => {
+                    alert(data);//true...
+                    $("#txtNewID").val("");
+                    $("#txtNewName").val("");
+                    $("#txtNewAddr").val("");
+                    $("#txtNewSal").val("");
+                    $("div:gt(0)").hide(2000);
+                })
+            })
+        }
+        $(document).ready(() => {
+            $("div:gt(0)").hide(2000);
+            populateData();
+            $("a:eq(1)").click(addingCode);
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center">Web Client for Web API</h1>
+    <div>
+        <a href="#">View All Records</a>
+        <a href="#">Add New Record</a>
+        <a href="#">About Us</a>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="4">Employee Info Table</th>
+            </tr>
+            <tr>
+                <td>Employee ID</td>
+                <td>Employee Name</td>
+                <td>Employee Address</td>
+                <td>Options</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Details of the Employee</h2>
+        <input placeholder="EmpID" id="txtID" />
+        <input placeholder="EmpName" id="txtName" />
+        <input placeholder="EmpAddress" id="txtAddr" />
+        <input placeholder="EmpSalary" id="txtSal" />
+        <button id="btnSave">Save Changes</button>
+    </div>
+
+    <div>
+        <h2>Registering new Employee</h2>
+        <input placeholder="EmpID" id="txtNewID" />
+        <input placeholder="EmpName" id="txtNewName" />
+        <input placeholder="EmpAddress" id="txtNewAddr" />
+        <input placeholder="EmpSalary" id="txtNewSal" />
+        <button id="btnAdd">Save Changes</button>
+    </div>
+</body>
+</html>
